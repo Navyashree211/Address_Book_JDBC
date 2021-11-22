@@ -1,5 +1,5 @@
 /*
- * UC16: To Update the contact information in the address book for a person and ensure that the contact information in the memory is Sycn with DB .
+ * UC17: To Update the contact information in the address book for a person and ensure that the contact information in the memory is Sycn with DB .
  *      - To retrieve the contact information from DB for a particular person .
  * 
  * @author : Navaya Shree
