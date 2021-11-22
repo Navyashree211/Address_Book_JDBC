@@ -1,5 +1,6 @@
 package com.BridgeLabz.AddressBookJDBC;
 
+
 public class ContactPerson {
 
 	private String firstName;
@@ -7,15 +8,16 @@ public class ContactPerson {
 	private String address;
 	private String city;
 	private String state;
-	private double phoneNumber,zip;
-	private String email;
+	private long phoneNumber,zip;
+	private String date;
+	
 
 	public ContactPerson() {
 
 	}
 
-	public ContactPerson(String firstName, String lastName, String address, String city, String state, int zip,
-			long phoneNumber, String email) {
+	public ContactPerson(String firstName, String lastName, String address, String city, String state, long zip,
+			long phoneNumber, String date) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.address = address;
@@ -23,7 +25,6 @@ public class ContactPerson {
 		this.state = state;
 		this.zip = zip;
 		this.phoneNumber = phoneNumber;
-		this.email = email;
 	}
 
 	public String getFirstName() {
@@ -71,7 +72,7 @@ public class ContactPerson {
 		return zip;
 	}
 
-	public void setZip(double zip) {
+	public void setZip(long zip) {
 		this.zip = zip;
 	}
 
@@ -79,23 +80,25 @@ public class ContactPerson {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(double phoneNumber) {
+	public void setPhoneNumber(long phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
-	public String getEmail() {
-		return email;
+	
+	public String getDate() {
+		return date;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setDate(String date) {
+		this.date = date;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "ContactPerson [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
-				+ city + ", state=" + state + ", zip=" + zip + ", phoneNumber=" + phoneNumber + ", email=" + email
-				+ "]";
+				+ city + ", state=" + state + ", phoneNumber=" + phoneNumber + ", zip=" + zip + ", date=" + date + "]";
 	}
 
+	
+	
 }
